@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Helmet bodyAttributes={{style: 'background-color : #f4f8fc'}}>
-        document.title = "Mario Briseño";
+        <title>Mario Briseño</title>
       </Helmet>
       <Core />
       <Itm />
