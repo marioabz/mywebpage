@@ -1,9 +1,10 @@
-import React from 'react';
-import Core from './components/core.js';
-import InfoContainer from "./components/infoContainer.js"
-import Contact from "./components/contact.js"
-import {Helmet} from "react-helmet"
 import './style/App.css';
+import React from 'react';
+import {Helmet} from "react-helmet"
+import Core from './components/core.js';
+import Contact from "./components/contact.js"
+import InfoContainer from "./components/infoContainer.js"
+import ToolsContainer from "./components/toolsContainer.js"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </Helmet>
       <Core />
       <InfoContainer />
+      <ToolsContainer />
       <Contact />
     </div>
   );
