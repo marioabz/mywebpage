@@ -12,6 +12,6 @@ export const tools = [
     "Bitcoin Blockchain",
     "Ethereum Blockchain with Web3",
     "Truffle, Ganache and IPFS",
-    "MySQL, PosgreSQL, DynamoDB",
+    "MySQL, PostgreSQL, DynamoDB",
     "AWS tools (EC2, EBS, RDS, S3, Lambdas, API Gateway, VPC)"
 ]
