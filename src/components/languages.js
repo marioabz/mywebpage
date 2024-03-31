@@ -1,17 +1,20 @@
 export const lang_en = {
     career: "Software Engineer",
-    info: "As a self-taught software engineer Mario has over 3 years of experience working with backend technologies. Mario has been working with Blockchain technologies the last 2 years at a cryptocurrencies exchange startup. Currently he is improving his data structures and algorithms skills as well as his systems design knowledge. He enjoys doing weight lifting, reading books, occasional beers and staying up to date with techonology trends. He does not like learning by watching videos."
+    info: "Software engineer with more than 6 years of experience with backend and cloud technologies. \
+       Currently working remotely @ Effex, a european scientific startup as backend and devops engineer. \
+       Interested in working on projects of infrastructure and developing a experience and a skillset on \
+       distributed systems in general: replication, fault tolerance, algorithms, etc.\
+       Keeping myself sane by lifting weights, getting to know people and reading books."
 }
-export const lang_esp = ""
-export const lang_chin = ""
 
 export const tools = [
-    "Redis",
-    "Python3 with Django and DRF",
-    "NodeJS with ExpressJS",
-    "Bitcoin Blockchain",
-    "Ethereum Blockchain with Web3",
-    "Truffle, Ganache and IPFS",
-    "MySQL, PostgreSQL, DynamoDB",
-    "AWS tools (EC2, EBS, RDS, S3, Lambdas, API Gateway, VPC)"
+    "Python",
+    "Rust",
+    "AWS:many_services",
+    "Databases:{postgres, dynamodb, mongodb}",
+    "Software principles:many",
+    "Certificates:none",
+    "Async:{celery, ray, rabbitmq}",
+    "Blockchain:{bitcoin, ethereum}",
+    "Smart conttracts:{solidity, huff}"
 ]
