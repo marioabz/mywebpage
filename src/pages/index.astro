@@ -14,7 +14,6 @@ const skills = [
   "Flask",
 ];
 
-const capabilities = ["Data pipelines", "Workflow orchestration", "Cloud infrastructure"];
 ---
 
 <BaseLayout
@@ -59,15 +58,6 @@ const capabilities = ["Data pipelines", "Workflow orchestration", "Cloud infrast
         </aside>
       </section>
 
-      <section class="highlight-strip" aria-label="Core capabilities">
-        {capabilities.map((capability, index) => (
-          <div class="highlight">
-            <b>{String(index + 1).padStart(2, "0")}</b>
-            <span>{capability}</span>
-          </div>
-        ))}
-      </section>
-
       <div class="lower-grid">
         <section id="experience" aria-labelledby="experience-title">
           <div class="section-head">
@@ -106,10 +96,6 @@ const capabilities = ["Data pipelines", "Workflow orchestration", "Cloud infrast
           <ul class="tech-grid" aria-label="Technologies">
             {skills.map((skill) => <li>{skill}</li>)}
           </ul>
-          <p class="note">
-            Interested in ambitious systems problems, thoughtful teams, and software
-            built to endure.
-          </p>
         </section>
       </div>
 
