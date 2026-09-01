@@ -103,25 +103,6 @@ nav a:hover {
   padding: 86px 0 72px;
 }
 
-.eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0 0 28px;
-  color: var(--moss);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.eyebrow::before {
-  width: 34px;
-  height: 2px;
-  background: var(--accent);
-  content: "";
-}
-
 h1 {
   max-width: 940px;
   margin: 0;
@@ -346,10 +327,6 @@ h1 em {
   align-items: end;
   padding: 70px 0;
   border-top: 1px solid var(--ink);
-}
-
-.contact .eyebrow {
-  margin-bottom: 20px;
 }
 
 .contact h2 {
