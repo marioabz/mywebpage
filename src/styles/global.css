@@ -45,12 +45,12 @@ a:focus-visible {
 .page-shell {
   width: min(100%, 1600px);
   margin: 0 auto;
-  padding: 0 72px;
+  padding: 0 56px;
 }
 
 .site-header {
   display: flex;
-  min-height: 108px;
+  min-height: 84px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--line);
@@ -99,8 +99,8 @@ nav a:hover {
 .hero {
   display: grid;
   grid-template-columns: 1.75fr 0.85fr;
-  gap: 86px;
-  padding: 86px 0 72px;
+  gap: 56px;
+  padding: 56px 0 50px;
 }
 
 h1 {
@@ -115,7 +115,7 @@ h1 {
 
 .intro {
   max-width: 700px;
-  margin: 34px 0 0;
+  margin: 26px 0 0;
   color: #4f554e;
   font-size: 1.05rem;
   line-height: 1.7;
@@ -125,7 +125,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 36px;
+  margin-top: 28px;
 }
 
 .button {
@@ -164,7 +164,7 @@ h1 {
 }
 
 .aside-index {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   color: var(--accent);
   font-family: var(--serif);
   font-size: 3.75rem;
@@ -173,7 +173,7 @@ h1 {
 }
 
 .fact {
-  padding: 18px 0;
+  padding: 14px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -195,8 +195,8 @@ h1 {
 .lower-grid {
   display: grid;
   grid-template-columns: 1.55fr 0.95fr;
-  gap: 90px;
-  padding: 64px 0 84px;
+  gap: 56px;
+  padding: 44px 0 54px;
   border-top: 1px solid var(--ink);
 }
 
@@ -224,7 +224,7 @@ h1 {
   display: grid;
   grid-template-columns: 115px 1fr;
   gap: 28px;
-  padding: 24px 0 25px;
+  padding: 20px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -272,22 +272,22 @@ h1 {
 }
 
 .background {
-  padding: 64px 0 72px;
+  padding: 44px 0 50px;
   border-top: 1px solid var(--ink);
 }
 
 .background-heading {
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 
 .background-grid {
   display: grid;
   grid-template-columns: 1.55fr 0.95fr;
-  gap: 90px;
+  gap: 56px;
 }
 
 .background-grid > div {
-  padding-top: 22px;
+  padding-top: 18px;
   border-top: 1px solid var(--line);
 }
 
@@ -326,9 +326,9 @@ h1 {
 .contact {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 48px;
+  gap: 36px;
   align-items: end;
-  padding: 70px 0;
+  padding: 46px 0;
   border-top: 1px solid var(--ink);
 }
 
@@ -359,7 +359,7 @@ h1 {
 
 footer {
   display: flex;
-  min-height: 84px;
+  min-height: 64px;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid var(--line);
@@ -384,7 +384,7 @@ footer {
   }
 
   .hero {
-    padding-top: 64px;
+    padding: 46px 0 42px;
   }
 
   .hero-aside {
