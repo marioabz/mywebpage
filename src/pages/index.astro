@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const skills = [
+  "Python",
+  "SQL",
+  "Go",
+  "Databricks",
+  "Airflow",
+  "Azure Durable Functions",
+  "AWS",
+  "Docker",
+  "PostgreSQL",
+  "FastAPI",
+  "Flask",
+  "Django",
+];
+---
+
+<BaseLayout
+  title="Mario Briseño — Senior Software Engineer"
+  description="Senior software engineer building distributed data systems, backend platforms, and cloud infrastructure."
+>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Monterrey, Mexico</p>
+      <h1>Mario Briseño</h1>
+      <p class="role">Senior Software Engineer</p>
+    </header>
+
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p class="intro">
+        Senior software engineer with 8+ years of experience building distributed
+        data systems, backend platforms, and cloud infrastructure. Specialized in
+        data pipelines, workflow orchestration, API development, containerized
+        infrastructure, and relational databases.
+      </p>
+    </section>
+
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Core technologies</h2>
+      <ul class="skills">
+        {skills.map((skill) => <li>{skill}</li>)}
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:mario.briseno7@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/mbz7/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/marioabz" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
