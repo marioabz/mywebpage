@@ -313,6 +313,16 @@ h1 {
   text-transform: uppercase;
 }
 
+.language-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.language-list p {
+  margin-bottom: 0;
+}
+
 .contact {
   display: grid;
   grid-template-columns: 1fr auto;
