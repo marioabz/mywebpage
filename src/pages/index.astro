@@ -13,43 +13,126 @@ const skills = [
   "FastAPI",
   "Flask",
 ];
+
+const capabilities = ["Data pipelines", "Workflow orchestration", "Cloud infrastructure"];
 ---
 
 <BaseLayout
   title="Mario Briseño — Senior Software Engineer"
   description="Senior software engineer building distributed data systems, backend platforms, and cloud infrastructure."
 >
-  <main>
-    <header class="hero">
-      <p class="eyebrow">Monterrey, Mexico</p>
-      <h1>Mario Briseño</h1>
-      <p class="role">Senior Software Engineer</p>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="identity" href="#top" aria-label="Mario Briseño, home">
+        <strong>Mario Briseño</strong>
+        <span>Senior Software Engineer</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <section aria-labelledby="about-title">
-      <h2 id="about-title">About</h2>
-      <p class="intro">
-        Senior software engineer with 8+ years of experience building distributed
-        data systems, backend platforms, and cloud infrastructure. Specialized in
-        data pipelines, workflow orchestration, API development, containerized
-        infrastructure, and relational databases.
-      </p>
-    </section>
+    <main id="top">
+      <section class="hero" id="about" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">Engineering for complexity</p>
+          <h1 id="hero-title">
+            Building distributed data systems, backend platforms, and
+            <em>cloud infrastructure.</em>
+          </h1>
+          <p class="intro">
+            Senior software engineer with 8+ years delivering reliable data
+            pipelines, workflow orchestration, APIs, and production infrastructure
+            across demanding technical environments.
+          </p>
+          <div class="actions">
+            <a class="button button-primary" href="#experience">View experience</a>
+            <a class="button" href="#contact">Contact</a>
+          </div>
+        </div>
 
-    <section aria-labelledby="skills-title">
-      <h2 id="skills-title">Core technologies</h2>
-      <ul class="skills">
-        {skills.map((skill) => <li>{skill}</li>)}
-      </ul>
-    </section>
+        <aside class="hero-aside" aria-label="Profile details">
+          <div class="aside-index" aria-hidden="true">01</div>
+          <div class="fact"><small>Based in</small><span>Monterrey, Mexico</span></div>
+          <div class="fact"><small>Focus</small><span>Systems &amp; platforms</span></div>
+          <div class="fact"><small>Perspective</small><span>Build for longevity</span></div>
+        </aside>
+      </section>
 
-    <section aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact</h2>
-      <div class="contact-links">
-        <a href="mailto:mario.briseno7@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/mbz7/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/marioabz" target="_blank" rel="noreferrer">GitHub</a>
+      <section class="highlight-strip" aria-label="Core capabilities">
+        {capabilities.map((capability, index) => (
+          <div class="highlight">
+            <b>{String(index + 1).padStart(2, "0")}</b>
+            <span>{capability}</span>
+          </div>
+        ))}
+      </section>
+
+      <div class="lower-grid">
+        <section id="experience" aria-labelledby="experience-title">
+          <div class="section-head">
+            <h2 id="experience-title">Selected experience</h2>
+            <small>Recent work</small>
+          </div>
+
+          <article class="experience-item">
+            <time datetime="2024-10/2026-03">2024—2026</time>
+            <div>
+              <h3>PwC</h3>
+              <p>
+                Senior backend engineering for a distributed platform that processed
+                blockchain data for cryptocurrency audit and reporting.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <time datetime="2021-03/2024-06">2021—2024</time>
+            <div>
+              <h3>KU Leuven / Effex</h3>
+              <p>
+                Backend, cloud infrastructure, deployment automation, and data-layer
+                ownership for a research-led SaaS platform.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="expertise" id="expertise" aria-labelledby="expertise-title">
+          <div class="section-head">
+            <h2 id="expertise-title">Working set</h2>
+            <small>Tools</small>
+          </div>
+          <ul class="tech-grid" aria-label="Technologies">
+            {skills.map((skill) => <li>{skill}</li>)}
+          </ul>
+          <p class="note">
+            Interested in ambitious systems problems, thoughtful teams, and software
+            built to endure.
+          </p>
+        </section>
       </div>
-    </section>
-  </main>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Start a conversation</p>
+          <h2 id="contact-title">Let’s build something durable.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:mario.briseno7@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/mbz7/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/marioabz" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Mario Briseño</span>
+      <span>Senior Software Engineer</span>
+    </footer>
+  </div>
 </BaseLayout>
