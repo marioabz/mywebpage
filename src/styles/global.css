@@ -180,15 +180,6 @@ h1 {
   border-left: 1px solid var(--line);
 }
 
-.aside-index {
-  margin-bottom: 30px;
-  color: var(--accent);
-  font-family: var(--serif);
-  font-size: 3.75rem;
-  font-style: italic;
-  line-height: 1;
-}
-
 .fact {
   padding: 14px 0;
   border-top: 1px solid var(--line);
@@ -412,10 +403,6 @@ footer {
   .hero-aside {
     padding-left: 0;
     border-left: 0;
-  }
-
-  .aside-index {
-    display: none;
   }
 
   .expertise {
