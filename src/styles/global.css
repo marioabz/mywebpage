@@ -340,15 +340,10 @@ h1 {
 .contact {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 36px;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 28px 0;
   border-top: 1px solid var(--ink);
-}
-
-.contact h2 {
-  font-size: 1.45rem;
 }
 
 .contact-links {
