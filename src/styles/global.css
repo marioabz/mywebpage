@@ -60,9 +60,9 @@ a:focus-visible {
 }
 
 .page-shell {
-  width: min(100%, 1600px);
+  width: min(100%, 1440px);
   margin: 0 auto;
-  padding: 0 56px;
+  padding: 0 clamp(56px, 7vw, 100px);
 }
 
 .site-header {
@@ -124,7 +124,7 @@ h1 {
   max-width: 940px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(3.7rem, 5.7vw, 5.75rem);
+  font-size: clamp(3.4rem, 4.8vw, 4.9rem);
   font-weight: 400;
   letter-spacing: -0.048em;
   line-height: 0.96;
