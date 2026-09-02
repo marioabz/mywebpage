@@ -287,9 +287,9 @@ h1 {
 }
 
 .tech-grid li:hover {
-  border-color: var(--moss);
-  background: #e4e3dc;
-  color: var(--moss);
+  border-color: #159fa3;
+  background: #bdeff0;
+  color: #075f62;
 }
 
 .background {
