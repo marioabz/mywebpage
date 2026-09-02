@@ -65,6 +65,35 @@ const structuredData = {
     <meta name="twitter:image" content={socialImageURL} />
     <title>{title}</title>
     <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <script is:inline>
+      if (window.location.hostname === "marioabz.com") {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+          window.dataLayer.push(arguments);
+        };
+
+        window.gtag("js", new Date());
+        window.gtag("config", "G-LKW4B7RKG9");
+
+        const analyticsScript = document.createElement("script");
+        analyticsScript.async = true;
+        analyticsScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=G-LKW4B7RKG9";
+        document.head.appendChild(analyticsScript);
+
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll('a[href$=".pdf"]').forEach((link) => {
+            link.addEventListener("click", () => {
+              window.gtag("event", "cv_download", {
+                file_name: "Mario-Briseno-CV.pdf",
+                link_text: link.textContent?.trim() || "CV",
+                link_url: link.href,
+              });
+            });
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <slot />
